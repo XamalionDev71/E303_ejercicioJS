@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Command Palette · Ejemplo de UI avanzada</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div class="hint">
+    <p>Presiona <kbd>Ctrl</kbd> + <kbd>K</kbd> (o <kbd>⌘</kbd> + <kbd>K</kbd>)</p>
+    <p style="margin-top: 0.5rem; color: #6b7280; font-size: 0.9rem;">
+      para abrir la Command Palette
+    </p>
+  </div>
+
+  <div class="palette-overlay" id="overlay">
+    <div class="palette">
+      <input
+        type="text"
+        class="palette-input"
+        id="searchInput"
+        placeholder="Escribe un comando..."
+        autocomplete="off"
+      />
+      <div class="palette-list" id="list"></div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toasts"></div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
